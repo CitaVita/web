@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trusted Co-Pilot</title>
+  
+	<link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+
+  <!-- Fonts: Khula (headings) + Urbanist (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <!-- Background & grain -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="box header-row">
+      <a class="brand" href="#top" aria-label="AI360 home">
+        <img class="brand-mark" src="./assets/logo.svg" alt="AI360 logo" onerror="this.remove()" />
+        <div>
+          <span class="urban">AI 360</span>
+          <p>Expertise from every angle</p>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <!-- Language -->
+        <div class="lang" id="lang">
+          <button class="lang-btn" id="langToggle" aria-haspopup="listbox" aria-expanded="false">
+            <span class="holo-orb holo-orb--sm" aria-hidden="true"></span>
+            <span class="lang-current" id="langCurrent">EN</span>
+          </button>
+
+          <div class="lang-menu" id="langMenu" role="listbox" aria-label="Select language">
+            <button data-lang="en">English</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="es">Español</button>
+            <button data-lang="it">Italiano</button>
+            <button data-lang="pt">Português</button>
+            <button data-lang="nl">Nederlands</button>
+            <button data-lang="pl">Polski</button>
+            <button data-lang="tr">Türkçe</button>
+            <button data-lang="uk">Українська</button>
+            <button data-lang="ru">Русский</button>
+            <button data-lang="ar">العربية</button>
+            <button data-lang="hi">हिन्दी</button>
+            <button data-lang="zh-CN">简体中文</button>
+            <button data-lang="zh-TW">繁體中文</button>
+            <button data-lang="ja">日本語</button>
+            <button data-lang="ko">한국어</button>
+          </div>
+        </div>
+
+        <!-- Hidden Google mount -->
+        <div id="google_translate_element" class="sr-only" aria-hidden="true"></div>
+
+        <!-- Contact CTA -->
+         <a target="_blank" href="https://calendly.com/luciamaistruk-ai360group/30min" class="cta-btn">Get in touch</a>
+        <!-- <button class="cta-btn" id="openContact" type="button" aria-haspopup="dialog" aria-controls="contactModal">
+          Get in touch
+        </button> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main" id="home">
+    <!-- HERO -->
+    <section class="hero box">
+      <h1 class="title">
+        Trusted <span class="holo-text">AI Co-Pilot for Business</span> Process Optimization
+      </h1>
+ <!-- VALUE PROP -->
+      <section class="value-prop" aria-label="Value proposition">
+        <p class="value-prop__text">
+          We design, audit, and deploy AI workflows that cut costs, accelerate operations,
+          and scale securely — from first pilot to enterprise-level automation.
+        </p>
+      </section>
+     
+
+      
+    </section>
+
+    
+<!-- ================= TRUSTED LOGOS (Carousel) ================= -->
+<section class="trusted" id="trusted">
+  <div class="trusted__inner">
+    <h2 class="trusted__title"> From global leaders to local teams</h2>
+
+    <div class="trusted__carousel">
+      <ul class="trusted__track">
+        <li class="trusted__logo"><img src="custumer-logos/ata_logo.png"     alt="ATA"></li>
+        <li class="trusted__logo"><img src="custumer-logos/bdtr_logo.png"    alt="BDTR"></li>
+        <li class="trusted__logo"><img src="custumer-logos/dhd_logo.png"     alt="Digital Health Diagnostic"></li>
+        <li class="trusted__logo"><img src="custumer-logos/milano_logo.png"  alt="Milano"></li>
+        <li class="trusted__logo"><img src="custumer-logos/sangsing_logo.png" alt="SANGSING"></li>
+
+        <li class="trusted__logo"><img src="custumer-logos/ata_logo.png"     alt="ATA"></li>
+        <li class="trusted__logo"><img src="custumer-logos/bdtr_logo.png"    alt="BDTR"></li>
+        <li class="trusted__logo"><img src="custumer-logos/dhd_logo.png"     alt="Digital Health Diagnostic"></li>
+        <li class="trusted__logo"><img src="custumer-logos/milano_logo.png"  alt="Milano"></li>
+        <li class="trusted__logo"><img src="custumer-logos/sangsing_logo.png" alt="SANGSING"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= HOW IT WORKS CICLE ================= -->
+
+<div class="how">
+  <div class="how-top">
+    <h2>HOW IT WORKS</h2>
+    <p class="how-prop">We make AI adoption simple, structured, and measurable. Our six-step process takes you from first assessment to full-scale deployment, ensuring every stage delivers business value and reduces risk.</p>
+  </div>
+  
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>AI Audit</h3>
+          <p>Assess workflows, data, and ROI readiness</p>
+        </div>
+        <p class="how-card__prop">Our goal is to understand current workflows, data quality, technical readiness, and business priorities. We map processes in understandable follow-up steps and highlight problem points. You receive a measurable roadmap with ROI ranges, effort, and sequencing.</p>
+      </div>
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>AI Solutions</h3>
+          <p>Prototype and tailor AI to business needs</p>
+        </div>
+        <p class="how-card__prop">Our priority is to answer what the AI does and how AI co-pilots/agents tailored to the business can scale KPIs and improve selected processes. We deliver a target architecture with an experience blueprint.</p>
+      </div>
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>Risk Check</h3>
+          <p>Validate compliance, governance, and security</p>
+        </div>
+        <p class="how-card__prop">We aim to de-risk before building and go-live by providing a risk register, controls, and sign-offs. The outcome is red-team tests, ensured security, privacy, model/PII handling, and SOC2/ISO/GDPR mapping. We provide you with security, legal/compliance, and data governance.</p>
+      </div>
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>AI Development</h3>
+          <p>Build and validate the solution</p>
+        </div>
+        <p class="how-card__prop">We focus on building and validating the solution end-to-end. We create data pipelines, model/prompt tuning, tool integrations (CRM/ERP/Slack, etc.), evaluation harness, and observability. You benefit from a working pilot with metrics (accuracy, latency, cost), plus a rollout plan.</p>
+      </div>
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>Team Enablement</h3>
+          <p>Train workforce for adoption & change</p>
+        </div>
+        <p class="how-card__prop">Our mission is to make teams confident operators and owners. We provide hands-on training, an internal champions programme, playbooks, runbooks, and governance rituals. You will get trained users/admins, an adoption plan, and a support model.</p>
+      </div>
+      <div class="how-card swiper-slide">
+        <div class="how-card__top">
+          <h3>R&D Credits</h3>
+          <p>Maximise ROI and stay compliant</p>
+        </div>
+        <p class="how-card__prop">We ensure your business remains innovative while fully audit-ready. Our strategy helps you claim up to 47% ROI from R&D tax credits, qualify eligibility, prepare documentation, and support both current and future claims. You can expect a compliance-ready documentation pack, successful claims with maximised returns, and long-term support for future filings.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= END  HOW IT WORKS CICLE ================= -->
+
+
+
+
+<!-- ================= OUR SERVICES ================= -->
+
+<div class="services">
+  <h2>Our services</h2>
+  <div class="services-body">
+    <div class="sevices__heads">
+      <div class="service__head service__head--active">
+        <h3>AI Strategy</h3>
+      </div>
+      <div class="service__head">
+        <h3>Intelligent Automation Solutions</h3>
+      </div>
+      <div class="service__head">
+        <h3>Finance & Operations Intelligence</h3>
+      </div>
+      <div class="service__head">
+        <h3>Regulatory & R&D Automation</h3>
+      </div>
+      <div class="service__head">
+        <h3>Enterprise AI Enablement</h3>
+      </div>
+    </div>
+    <div class="services__descriptions">
+      <div class="service__description service__description--active">
+        <p>We analyze your existing infrastructure, operational workflows, and data maturity to identify high-impact automation opportunities. You'll receive a prioritized implementation roadmap with clear ROI forecasts, resource requirements, and phased deployment milestones—giving you the confidence to move forward with precision rather than guesswork.</p>
+        <div class="service__image">
+          <!-- Image -->
+          <img src="./services-img/section_1.png" alt="AI Strategy">
+        </div>
+      </div>
+      <div class="service__description">
+        <p>We architect and deploy custom AI agents, copilots, and decision-support systems engineered for your specific operational context. The result is production-ready AI systems that integrate seamlessly with your technology stack, delivering measurable improvements in efficiency, accuracy, and decision-making speed that compound over time.</p>
+        <div class="service__image">
+          <!-- Image -->
+          <img src="./services-img/section_2.png" alt="Intelligent Automation Solutions">
+        </div>
+      </div>
+      <div class="service__description">
+        <p>We transform critical business processes—from financial consolidation to procurement workflows—through targeted AI automation. Your teams gain accelerated cycle times, reduced operational costs, and real-time performance visibility, freeing them to focus on strategic work rather than repetitive tasks.</p>
+        <div class="service__image">
+          
+          <!-- Image -->
+          <img src="./services-img/section_3.png" alt="Finance & Operations Intelligence">
+        </div>
+      </div>
+      <div class="service__description">
+        <p>We automate compliance documentation, audit trails, and R&D tax credit workflows to ensure regulatory adherence without administrative burden. What once took weeks of manual compilation now happens continuously in the background—streamlining grant applications, ensuring defensible audit documentation, and minimizing compliance risk.</p>
+        <div class="service__image">
+          
+          <!-- Image -->
+          <img src="./services-img/section_4.png" alt="Regulatory & R&D Automation">
+        </div>
+      </div>
+      <div class="service__description">
+        <p>We equip your leadership and operational teams with practical AI competencies through tailored workshops and change management support. Your organization builds lasting AI literacy, establishes governance frameworks, and develops the internal capability to scale AI initiatives independently—transforming AI from an external dependency into a core competency.</p>
+        <div class="service__image">
+          
+          <!-- Image-->
+          <img src="./services-img/section_5.png" alt="Enterprise AI Enablement">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features box">
+      <h2>Get started in 30 minutes</h2>
+
+      <div class="features__grid">
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/people.svg" alt="Seamless Start" />
+          </div>
+          <h3>Seamless Start</h3>
+          <p>From introduction to a working AI roadmap in just 30 minutes.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/atomic-power.svg" alt="Powerful" />
+          </div>
+          <h3>Powerful</h3>
+          <p>Up to 30× faster optimization with a bespoke AI audit and a measurable, outcome-focused strategy — with the option to reuse prior campaign knowledge.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/ai-security-02.svg" alt="Secure" />
+          </div>
+          <h3>Secure</h3>
+          <p>Encrypted AWS environments, with optional on-prem deployment for regulated industries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / BLURB -->
+    <!-- <section class="box">
+      <div class="call-about">
+        AI360 is your applied-AI partner focused on operational efficiency and resilient delivery.
+        We combine audit-first strategy, robust engineering, and secure deployment to turn automation
+        into measurable outcomes.
+      </div>
+    </section> -->
+
+    <!-- ================= BOOK A CALL ================= -->
+    <section class="call box" id="book">
+      <h3>Explore what’s possible in a single session</h3>
+      <h2 class="call-title">Book a Free 30-minute call</h2>
+      <p class="call-lead">
+        We’ll identify your highest-leverage automation opportunities and outline
+        a measurable plan for impact in weeks, not months.
+      </p>
+
+      <ul class="call-offer" aria-label="What we cover">
+        <li>Rapid AI audit — from single process to full business scope</li>
+        <li>Ops &amp; finance automation options with ROI ranges</li>
+        <li>Security approach with private AWS or on-prem options</li>
+      </ul>
+
+      <a class="cta-hero cta-hero--outline"
+         href="https://calendly.com/luciamaistruk-ai360group/30min"
+         target="_blank" rel="noopener">
+        Book a Free Call
+      </a>
+    </section>
+
+    <!-- ================= FOLLOW ================= -->
+    <section class="follow box" aria-label="Social links">
+      <div class="follow-right">
+        <a class="social" href="https://www.linkedin.com/company/ai-360-group" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="social" href="https://www.youtube.com/@LuciaMaistruk" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="box footer-grid">
+      <div class="foot-left">
+        <div class="foot-label">Contact</div>
+        <a class="foot-mail" href="mailto:info@ai360group.com">info@ai360group.com</a>
+        <div class="foot-actions">
+          <!-- <button class="pill-neo" id="openContact2" type="button" aria-haspopup="dialog" aria-controls="contactModal">Get in touch</button>
+          <button class="pill-neo" id="openAdvisor" type="button" aria-haspopup="dialog" aria-controls="advisorModal">Advisor Portal</button> -->
+          <a target="_blank" href="https://calendly.com/luciamaistruk-ai360group/30min" class="cta-btn">Get in touch</a>
+        </div>
+      </div>
+
+      <nav class="foot-legal" aria-label="Legal">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+      </nav>
+
+      <div class="foot-right">
+        <div class="foot-label">Location</div>
+        <address class="addr">
+          86–90 Paul Street, London<br>
+          United Kingdom, EC2A&nbsp;4NE
+        </address>
+      </div>
+
+      <div class="foot-copy">Copyright © 2025 AI360 Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+  <!-- <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="closeContact" aria-label="Close dialog">✕</button>
+      <h2 id="contactTitle" class="form-title">Help us understand your priorities</h2>
+      <p class="form-kicker">A few details help us route you to the right specialist.</p>
+
+      <form class="lead-form" id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="c-title">Title</label>
+            <select id="c-title" name="title" class="form-input" required>
+              <option value="">Select…</option>
+              <option>Mr.</option><option>Mrs.</option><option>Ms.</option><option>Miss</option>
+              <option>Dr.</option><option>Prof.</option><option>Sir</option><option>Lady</option>
+              <option>Lord</option><option>Dame</option><option>PhD Candidate</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="c-email">Contact email</label>
+            <input id="c-email" name="email" type="email" class="form-input" placeholder="you@company.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="c-name">Full name</label>
+            <input id="c-name" name="name" type="text" class="form-input" placeholder="Name, Surname" required />
+          </div>
+
+          <div class="form-field">
+            <label for="c-role">Your role in the company</label>
+            <input id="c-role" name="role" type="text" class="form-input" placeholder="Head of Ops, CTO, Partner…" />
+          </div>
+
+          <div class="form-field">
+            <label for="c-company">Company</label>
+            <input id="c-company" name="company" type="text" class="form-input" placeholder="Enter company name" />
+          </div>
+
+          <div class="form-field">
+            <label for="c-website">Company website</label>
+            <input id="c-website" name="website" type="url" class="form-input" placeholder="https://company.com" />
+          </div>
+
+          <div class="form-field">
+            <label for="c-size">Company size</label>
+            <select id="c-size" name="company_size" class="form-input" required>
+              <option value="">Select company size</option>
+              <option>Less than 20</option><option>20–50</option><option>50–100</option>
+              <option>100–500</option><option>More than 500</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="c-revenue">Company’s annual revenue</label>
+            <select id="c-revenue" name="revenue" class="form-input" required>
+              <option value="">Select revenue range</option>
+              <option>Less than £100K</option><option>£100K–£600K</option><option>£600K–£1M</option>
+              <option>£1M–£5M</option><option>More than £5M</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="c-budget">Project budget</label>
+            <select id="c-budget" name="budget" class="form-input" required>
+              <option value="">Select budget range</option>
+              <option>Less than £10K</option><option>£10K–£50K</option><option>£50K–£100K</option>
+              <option>More than £100K</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="c-services">What services are you interested in?</label>
+            <select id="c-services" name="service" class="form-input" required>
+              <option value="">Select service</option>
+              <option>AI Audit &amp; Strategy</option>
+              <option>AI Co-Pilot / Agents</option>
+              <option>AI Finance Automation</option>
+              <option>R&amp;D Tax Relief Claims</option>
+              <option>Custom CRM / Data Apps</option>
+              <option>Legal-Tech Experiments</option>
+            </select>
+          </div>
+
+          <div class="form-field form-span2">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="5" class="form-input" placeholder="Share context, goals, timelines…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary cta-btn" type="submit">Send inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="advisorModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorTitle">
+    <div class="modal-card wide">
+      <button class="modal-close" id="closeAdvisor" aria-label="Close dialog">✕</button>
+      <h2 id="advisorTitle" class="form-title">Advisor Portal — Become an expert</h2>
+      <p class="form-kicker">Share your capabilities so we can route you to suitable mandates.</p>
+
+      <form class="lead-form" id="advisorForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="a-name">Full name</label>
+            <input id="a-name" name="name" class="form-input" placeholder="Name, Surname" required />
+          </div>
+          <div class="form-field">
+            <label for="a-email">Contact email</label>
+            <input id="a-email" name="email" type="email" class="form-input" placeholder="you@company.com" required />
+          </div>
+          <div class="form-field">
+            <label for="a-linkedin">LinkedIn URL</label>
+            <input id="a-linkedin" name="linkedin" class="form-input" placeholder="https://linkedin.com/in/you" />
+          </div>
+          <div class="form-field">
+            <label for="a-location">Location</label>
+            <input id="a-location" name="location" class="form-input" placeholder="City, Country" />
+          </div>
+
+          <div class="form-field form-span2">
+            <label>Areas of expertise</label>
+            <div class="tags">
+              <label><input type="checkbox" name="expertise" value="audit"> <span>AI Audit &amp; Strategy</span></label>
+              <label><input type="checkbox" name="expertise" value="copilot"> <span>AI Co-Pilot / Agents</span></label>
+              <label><input type="checkbox" name="expertise" value="finance"> <span>AI Finance Automation</span></label>
+              <label><input type="checkbox" name="expertise" value="crm"> <span>Custom CRM / Data Apps</span></label>
+              <label><input type="checkbox" name="expertise" value="dataeng"> <span>Data Engineering</span></label>
+              <label><input type="checkbox" name="expertise" value="mlops"> <span>MLOps &amp; Deployment</span></label>
+              <label><input type="checkbox" name="expertise" value="safety"> <span>GenAI Safety / Guardrails</span></label>
+              <label><input type="checkbox" name="expertise" value="aws"> <span>Cloud (AWS)</span></label>
+              <label><input type="checkbox" name="expertise" value="security"> <span>Security &amp; Compliance</span></label>
+              <label><input type="checkbox" name="expertise" value="frontend"> <span>Front-end / UX</span></label>
+              <label><input type="checkbox" name="expertise" value="rndtax"> <span>R&amp;D Tax Relief</span></label>
+              <label><input type="checkbox" name="expertise" value="legaltech"> <span>Legal-Tech</span></label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="a-langs">Languages</label>
+            <input id="a-langs" name="languages" class="form-input" placeholder="e.g., English, German, French" />
+          </div>
+
+          <div class="form-field">
+            <label for="a-availability">Availability</label>
+            <select id="a-availability" name="availability" class="form-input">
+              <option value="">Select availability</option>
+              <option>Up to 1 day / week</option>
+              <option>1–2 days / week</option>
+              <option>3–4 days / week</option>
+              <option>Full-time (contract)</option>
+              <option>Ad-hoc (on demand)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="a-cv">CV / Portfolio URL</label>
+            <input id="a-cv" name="cv" class="form-input" placeholder="Link to CV or portfolio (GDrive, Notion, etc.)" />
+          </div>
+
+          <div class="form-field">
+            <label for="a-notes">Notes</label>
+            <textarea id="a-notes" name="notes" rows="3" class="form-input" placeholder="Anything else we should know?"></textarea>
+          </div>
+
+          <div class="form-field form-span2 checkbox">
+            <input id="a-consent" name="consent" type="checkbox">
+            <label for="a-consent">I agree to be contacted about suitable mandates and scheduling.</label>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary cta-btn" type="submit">Submit profile</button>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+
+  <!-- =================== START ANIMATION ================== -->
+  <div class="start-animation">
+    <svg  class="logo-start" width="321" height="287" viewBox="0 0 321 287" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="logo-slice" d="M217.768 0H69.7721C67.4627 0 66.0193 2.5 67.174 4.5L91.134 46C91.6699 46.9282 92.6603 47.5 93.7321 47.5H237.223C239.533 47.5 240.976 50 239.821 52L168.866 174.898C168.33 175.826 168.33 176.97 168.866 177.898L191.73 217.5C192.885 219.5 195.772 219.5 196.926 217.5L270.134 90.7006C270.67 89.7724 270.67 88.6288 270.134 87.7006L220.366 1.5C219.83 0.571797 218.84 0 217.768 0Z" fill="#FFFEFE"/>
+    <path class="logo-slice" d="M73.315 282.545L0.880517 158.741C0.336139 157.811 0.332816 156.66 0.871811 155.726L48.634 73C49.1699 72.0718 50.1603 71.5 51.2321 71.5H196.207C198.517 71.5 199.96 74 198.805 76L176.866 114C176.33 114.928 175.34 115.5 174.268 115.5H31.7543C29.4449 115.5 28.0015 118 29.1562 120L99.8816 242.5C100.418 243.428 100.418 244.572 99.8816 245.5L78.5024 282.53C77.3516 284.523 74.4773 284.532 73.315 282.545Z" fill="#FFFEFE"/>
+    <path class="logo-slice" d="M143.076 269L68.5981 140C67.4434 138 68.8867 135.5 71.1962 135.5H116.425C117.497 135.5 118.487 136.072 119.023 137L191.48 262.5C192.635 264.5 195.522 264.5 196.677 262.5L269.134 137C269.67 136.072 270.66 135.5 271.732 135.5H315.246C317.556 135.5 318.999 138 317.844 140L243.366 269C242.83 269.928 241.84 270.5 240.768 270.5H145.674C144.603 270.5 143.612 269.928 143.076 269Z" fill="#FFFEFE"/>
+    </svg>
+    <span class="logo-text typewriter"></span>
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+  <script>
+    // Cursor glow
+    const glow = document.querySelector('.bg-glow');
+    const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduce && glow) {
+      window.addEventListener('pointermove', (e) => {
+        glow.style.setProperty('--gx', e.clientX + 'px');
+        glow.style.setProperty('--gy', e.clientY + 'px');
+      });
+    }
+
+    // Modal helpers
+    function openModal(el){ el.setAttribute('aria-hidden','false'); el.classList.add('is-open'); document.body.style.overflow='hidden'; }
+    function closeModal(el){ el.setAttribute('aria-hidden','true'); el.classList.remove('is-open'); document.body.style.overflow=''; }
+
+    // Contact modal
+    const contactModal = document.getElementById('contactModal');
+    document.getElementById('openContact').addEventListener('click', () => openModal(contactModal));
+    document.getElementById('openContact2').addEventListener('click', () => openModal(contactModal));
+    document.getElementById('closeContact').addEventListener('click', () => closeModal(contactModal));
+    contactModal.addEventListener('click', (e)=>{ if(e.target === contactModal) closeModal(contactModal); });
+
+    // Advisor modal
+    const advisorModal = document.getElementById('advisorModal');
+    document.getElementById('openAdvisor').addEventListener('click', () => openModal(advisorModal));
+    document.getElementById('closeAdvisor').addEventListener('click', () => closeModal(advisorModal));
+    advisorModal.addEventListener('click', (e)=>{ if(e.target === advisorModal) closeModal(advisorModal); });
+
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        if (contactModal.classList.contains('is-open')) closeModal(contactModal);
+        if (advisorModal.classList.contains('is-open')) closeModal(advisorModal);
+      }
+    });
+
+    // Fake submits
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault(); closeModal(contactModal); alert('Thanks — we’ve received your inquiry.');
+    });
+    document.getElementById('advisorForm').addEventListener('submit', (e)=>{
+      e.preventDefault(); closeModal(advisorModal); alert('Thanks — your advisor profile has been submitted.');
+    });
+  </script>
+
+  <!-- Typewriter -->
+  <script>
+  (function () {
+    const SPEED = 95, JITTER = 0.20, SPACE_MULT = 0.6, PUNCT_PAUSE = 220, BLINK_MS = 500;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function startCursor(el){
+      el.style.animation = 'none'; el.style.borderRight = '0.12em solid rgba(255,255,255,.75)';
+      let on = true; const id = setInterval(()=>{ on = !on; el.style.borderRightColor = on ? 'rgba(255,255,255,.75)' : 'transparent'; }, BLINK_MS);
+      return ()=>{ clearInterval(id); el.style.borderRight = 'none'; };
+    }
+    function nextDelay(ch){ let d = SPEED * (1 + (Math.random()*2-1)*JITTER); if(ch===' ') d*=SPACE_MULT; if(/[.,!?;:]/.test(ch)) d+=PUNCT_PAUSE; return Math.max(10, Math.round(d)); }
+    function typeElement(el){
+      const full = el.textContent || ''; if(!full || reduceMotion){ el.textContent = full; el.classList.add('done'); return; }
+      el.setAttribute('aria-live','polite'); el.setAttribute('aria-atomic','true');
+      const stop = startCursor(el); el.textContent=''; let i=0; (function tick(){ if(i<full.length){ const ch=full.charAt(i++); el.textContent+=ch; setTimeout(tick, nextDelay(ch)); } else { stop(); el.classList.add('done'); } })();
+    }
+    function init(){ document.querySelectorAll('.typewriter').forEach(typeElement); }
+    (document.readyState === 'loading') ? document.addEventListener('DOMContentLoaded', init, { once:true }) : init();
+  })();
+  </script>
+
+  <!-- Language control + Google Translate -->
+  <script>
+  (function(){
+    const toggle  = document.getElementById('langToggle');
+    const menu    = document.getElementById('langMenu');
+    const current = document.getElementById('langCurrent');
+    if (!toggle || !menu || !current) return;
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+
+    function setLanguage(code){
+      current.textContent = code.toUpperCase().replace('ZH-CN','ZH').replace('ZH-TW','ZH');
+      localStorage.setItem('ai360_lang', code);
+      document.documentElement.dir = ['ar','he','fa','ur'].includes(code) ? 'rtl' : 'ltr';
+      (function tryApply(){
+        const combo = document.querySelector('select.goog-te-combo');
+        if (combo) { combo.value = code; combo.dispatchEvent(new Event('change')); }
+        else setTimeout(tryApply, 200);
+      })();
+    }
+
+    menu.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-lang]');
+      if (!btn) return;
+      setLanguage(btn.dataset.lang);
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+
+    function ensureGoogle(){
+      if (window.google && window.google.translate) {
+        if (!document.querySelector('.goog-te-combo')) {
+          new window.google.translate.TranslateElement({ pageLanguage:'en', autoDisplay:false }, 'google_translate_element');
+        }
+        const saved = localStorage.getItem('ai360_lang');
+        if (saved) setLanguage(saved);
+        return;
+      }
+      if (!document.getElementById('gt-script')) {
+        const s = document.createElement('script');
+        s.id = 'gt-script';
+        window.googleTranslateElementInit = function(){
+          new window.google.translate.TranslateElement({ pageLanguage:'en', autoDisplay:false }, 'google_translate_element');
+          const saved = localStorage.getItem('ai360_lang');
+          if (saved) setLanguage(saved);
+        };
+        s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.head.appendChild(s);
+      }
+    }
+    ensureGoogle();
+  })();
+  </script>
+
+
+<script>
+/* Tabs behavior + animated vertical indicator */
+(function(){
+  const strip = document.querySelector('.services__tabs');
+  if (!strip) return;
+
+  const tabs  = [...strip.querySelectorAll('.services__tab')];
+  const ind   = strip.querySelector('.services__indicator');
+  const panels= [...document.querySelectorAll('.services__panel')];
+
+  function activate(idx){
+    tabs.forEach((t,i)=>{
+      const on = i === idx;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      panels[i].classList.toggle('is-active', on);
+    });
+
+    // move the indicator to the active tab (left-side, vertical blue line)
+    const active = tabs[idx];
+    const r = active.getBoundingClientRect();
+    const s = strip.getBoundingClientRect();
+    ind.style.height = r.height + 'px';
+    ind.style.transform = `translateY(${active.offsetTop - strip.firstElementChild.offsetTop + 14}px)`; // 14px padding top
+  }
+
+  // init
+  activate(0);
+  tabs.forEach((tab, i)=> tab.addEventListener('click', ()=> activate(i)));
+  window.addEventListener('resize', ()=> {
+    const current = tabs.findIndex(t => t.classList.contains('is-active'));
+    if (current >= 0) activate(current);
+  });
+})();
+</script>
+
+
+
+<!-- ===== -->
+
+<script>
+(function(){
+  const root   = document.querySelector('#our-services');
+  if(!root) return;
+
+  const tabs   = [...root.querySelectorAll('.svc__tab')];
+  const panels = [...root.querySelectorAll('.svc__panel')];
+  const accent = root.querySelector('.svc__accent');
+  const tabsWrap = root.querySelector('.svc__tabs');
+
+  function moveAccent(toEl){
+    const r = toEl.getBoundingClientRect();
+    const wrapR = tabsWrap.getBoundingClientRect();
+    accent.style.height = r.height + 'px';
+    // place the accent at the RIGHT edge of the active tab
+    const x = (toEl.offsetLeft + toEl.offsetWidth) - 1; // -1 so it hugs the edge
+    accent.style.transform = `translateX(${x}px)`;
+  }
+
+  function activate(i){
+    tabs.forEach((t,idx)=>{
+      const on = idx === i;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      panels[idx].classList.toggle('is-active', on);
+    });
+    moveAccent(tabs[i]);
+  }
+
+  // init
+  activate(0);
+
+  // events
+  tabs.forEach((t,i)=> t.addEventListener('click', ()=> activate(i)));
+  window.addEventListener('resize', ()=>{
+    const current = tabs.findIndex(t=>t.classList.contains('is-active'));
+    if(current>-1) moveAccent(tabs[current]);
+  });
+})();
+</script>
+
+
+
+
+</body>
+</html>

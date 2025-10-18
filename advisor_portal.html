@@ -1,0 +1,208 @@
+
+  <!-- ================ ADVISOR PORTAL (intro.co-inspired) ================ -->
+  <div class="modal" id="advisorModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="advisorTitle">
+    <div class="modal-card wide">
+      <button class="modal-close" id="closeAdvisor" aria-label="Close dialog">✕</button>
+
+      <h2 id="advisorTitle" class="form-title">Apply as an AI360 Advisor</h2>
+      <p class="form-kicker">Concise profile helps us match you with the right engagements.</p>
+
+      <form class="lead-form" id="advisorForm" novalidate>
+        <div class="form-grid">
+          <!-- Personal -->
+          <div class="form-field">
+            <label for="adv-title">Title</label>
+            <select id="adv-title" name="adv-title" class="form-input" required autocomplete="honorific-prefix">
+              <option value="">Select…</option>
+              <option>Mr</option><option>Mrs</option><option>Ms</option><option>Miss</option>
+              <option>Dr</option><option>Prof</option><option>Sir</option><option>Dame</option>
+              <option>Lord</option><option>Lady</option><option>PhD Candidate</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="adv-name">Full name</label>
+            <input id="adv-name" name="adv-name" type="text" class="form-input" placeholder="Name, Surname" required autocomplete="name" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-email">Contact email</label>
+            <input id="adv-email" name="adv-email" type="email" class="form-input" placeholder="you@company.com" required autocomplete="work email" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-headline">Professional headline</label>
+            <input id="adv-headline" name="adv-headline" type="text" class="form-input" placeholder="e.g., Principal Data Scientist, Fintech" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-linkedin">LinkedIn URL</label>
+            <input id="adv-linkedin" name="adv-linkedin" type="url" class="form-input" placeholder="https://www.linkedin.com/in/…" inputmode="url" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-website">Website / Portfolio</label>
+            <input id="adv-website" name="adv-website" type="url" class="form-input" placeholder="https://your-site.com" inputmode="url" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-location">Location</label>
+            <input id="adv-location" name="adv-location" type="text" class="form-input" placeholder="City, Country" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-timezone">Time zone</label>
+            <select id="adv-timezone" name="adv-timezone" class="form-input">
+              <option value="">Select…</option>
+              <option>Europe/London (GMT/BST)</option>
+              <option>Europe/Paris (CET/CEST)</option>
+              <option>Europe/Berlin (CET/CEST)</option>
+              <option>US/Eastern (ET)</option>
+              <option>US/Central (CT)</option>
+              <option>US/Mountain (MT)</option>
+              <option>US/Pacific (PT)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="adv-languages">Languages</label>
+            <input id="adv-languages" name="adv-languages" type="text" class="form-input" placeholder="English, German…" />
+          </div>
+
+          <div class="form-field">
+            <label for="adv-experience">Years of experience</label>
+            <select id="adv-experience" name="adv-experience" class="form-input">
+              <option value="">Select…</option>
+              <option>3–5</option><option>6–9</option><option>10–14</option><option>15+</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="adv-availability">Availability</label>
+            <select id="adv-availability" name="adv-availability" class="form-input">
+              <option value="">Select…</option>
+              <option>Immediate</option>
+              <option>Within 2 weeks</option>
+              <option>Within 1 month</option>
+              <option>Part-time only</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="adv-model">Engagement model</label>
+            <select id="adv-model" name="adv-model" class="form-input">
+              <option value="">Select…</option>
+              <option>Hourly</option>
+              <option>Daily</option>
+              <option>Project-based</option>
+              <option>Fractional</option>
+              <option>Advisory retainer</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="adv-rate">Typical rate</label>
+            <input id="adv-rate" name="adv-rate" type="text" class="form-input" placeholder="e.g., £120/hr or £900/day" />
+          </div>
+
+          <div class="form-field form-span2">
+            <label for="adv-specialties">Primary specialties (select up to 5)</label>
+            <div class="tags">
+              <label><input type="checkbox" name="spec" value="AI Co-Pilot / Agents"> AI Co-Pilot / Agents</label>
+              <label><input type="checkbox" name="spec" value="Finance Automation"> Finance Automation</label>
+              <label><input type="checkbox" name="spec" value="AI Audit & Strategy"> AI Audit & Strategy</label>
+              <label><input type="checkbox" name="spec" value="R&D Tax Relief"> R&D Tax Relief</label>
+              <label><input type="checkbox" name="spec" value="Legal-Tech"> Legal-Tech</label>
+              <label><input type="checkbox" name="spec" value="Data Engineering"> Data Engineering</label>
+              <label><input type="checkbox" name="spec" value="LLM Safety / Guardrails"> LLM Safety / Guardrails</label>
+              <label><input type="checkbox" name="spec" value="Front-end / UX"> Front-end / UX</label>
+              <label><input type="checkbox" name="spec" value="Cloud (AWS)"> Cloud (AWS)</label>
+              <label><input type="checkbox" name="spec" value="Security / Compliance"> Security / Compliance</label>
+            </div>
+          </div>
+
+          <div class="form-field form-span2">
+            <label for="adv-industries">Industries (comma separated)</label>
+            <input id="adv-industries" name="adv-industries" type="text" class="form-input" placeholder="Financial services, Energy, Retail…" />
+          </div>
+
+          <div class="form-field form-span2">
+            <label for="adv-bio">Short bio</label>
+            <textarea id="adv-bio" name="adv-bio" class="form-input" rows="6" placeholder="One-paragraph summary of your domain expertise and recent wins."></textarea>
+          </div>
+
+          <div class="form-field form-span2">
+            <label for="adv-links">Case links (CV / Deck / GitHub)</label>
+            <input id="adv-links" name="adv-links" type="url" class="form-input" placeholder="https://link-to-cv-or-cases.com" />
+          </div>
+
+          <label class="checkbox form-span2">
+            <input type="checkbox" required>
+            <span>I agree to keep all client information confidential and follow AI360’s code of conduct.</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary" type="submit">Submit application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== JS: modals + simple handlers ===== -->
+  <script>
+    // Contact modal
+    const modal = document.getElementById('modal');
+    const openModal = document.getElementById('openModal');
+    const openModal2 = document.getElementById('openModal2');
+    const closeModal = document.getElementById('closeModal');
+
+    function showModal() {
+      modal.setAttribute('aria-hidden','false');
+      modal.classList.add('is-open');
+      document.body.style.overflow='hidden';
+      setTimeout(()=>document.getElementById('title').focus(),50);
+    }
+    function hideModal() {
+      modal.setAttribute('aria-hidden','true');
+      modal.classList.remove('is-open');
+      document.body.style.overflow='';
+    }
+    openModal.addEventListener('click', showModal);
+    openModal2 && openModal2.addEventListener('click', showModal);
+    closeModal.addEventListener('click', hideModal);
+    modal.addEventListener('click', (e)=>{ if(e.target===modal) hideModal(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && modal.classList.contains('is-open')) hideModal(); });
+
+    document.getElementById('leadForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      hideModal();
+      alert('Thanks — we’ve received your inquiry.');
+    });
+
+    // Advisor modal
+    const advisorModal = document.getElementById('advisorModal');
+    const openAdvisor = document.getElementById('openAdvisor');
+    const closeAdvisor = document.getElementById('closeAdvisor');
+    function showAdvisor() {
+      advisorModal.setAttribute('aria-hidden','false');
+      advisorModal.classList.add('is-open');
+      document.body.style.overflow='hidden';
+      setTimeout(()=>document.getElementById('adv-title').focus(),50);
+    }
+    function hideAdvisor() {
+      advisorModal.setAttribute('aria-hidden','true');
+      advisorModal.classList.remove('is-open');
+      document.body.style.overflow='';
+    }
+    openAdvisor.addEventListener('click', showAdvisor);
+    closeAdvisor.addEventListener('click', hideAdvisor);
+    advisorModal.addEventListener('click', (e)=>{ if(e.target===advisorModal) hideAdvisor(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && advisorModal.classList.contains('is-open')) hideAdvisor(); });
+
+    document.getElementById('advisorForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      hideAdvisor();
+      alert('Thanks — your advisor application has been submitted.');
+    });
+  </script>

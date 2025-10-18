@@ -1,0 +1,124 @@
+<!-- ================= CONTACT MODAL ================= -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close dialog">✕</button>
+
+      <h2 id="modalTitle" class="form-title">Help us understand your priorities</h2>
+      <p class="form-kicker">Provide details to reach the right expert.</p>
+
+      <form class="lead-form" id="leadForm" novalidate>
+        <div class="form-grid">
+          <!-- Title -->
+          <div class="form-field">
+            <label for="title">Title</label>
+            <select id="title" name="title" class="form-input" required autocomplete="honorific-prefix">
+              <option value="">Select…</option>
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+              <option>Miss</option>
+              <option>Dr</option>
+              <option>Prof</option>
+              <option>Sir</option>
+              <option>Lady</option>
+              <option>Lord</option>
+              <option>Dame</option>
+              <option>PhD Candidate</option>
+            </select>
+          </div>
+
+          <!-- Contact email -->
+          <div class="form-field">
+            <label for="email">Contact email</label>
+            <input id="email" name="email" type="email" class="form-input" placeholder="you@company.com" required autocomplete="work email" />
+          </div>
+
+          <!-- Full name -->
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" class="form-input" placeholder="Name, Surname" required autocomplete="name" />
+          </div>
+
+          <!-- Role -->
+          <div class="form-field">
+            <label for="role">Your role in the company</label>
+            <input id="role" name="role" type="text" class="form-input" placeholder="Head of Ops, CTO, Partner…" />
+          </div>
+
+          <!-- Company -->
+          <div class="form-field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" class="form-input" placeholder="Enter company name" autocomplete="organization" />
+          </div>
+
+          <!-- Website -->
+          <div class="form-field">
+            <label for="website">Company website</label>
+            <input id="website" name="website" type="url" class="form-input" placeholder="https://company.com" inputmode="url" autocomplete="url" />
+          </div>
+
+          <!-- Company size -->
+          <div class="form-field">
+            <label for="size">Company size</label>
+            <select id="size" name="size" class="form-input" required>
+              <option value="">Select company size</option>
+              <option>Less than 20</option>
+              <option>20–50</option>
+              <option>50–100</option>
+              <option>100–500</option>
+              <option>More than 500</option>
+            </select>
+          </div>
+
+          <!-- Revenue -->
+          <div class="form-field">
+            <label for="revenue">Company’s annual revenue</label>
+            <select id="revenue" name="revenue" class="form-input" required>
+              <option value="">Select revenue range</option>
+              <option>Less than £100K</option>
+              <option>£100K–£600K</option>
+              <option>£600K–£1M</option>
+              <option>£1M–£5M</option>
+              <option>More than £5M</option>
+            </select>
+          </div>
+
+          <!-- Budget -->
+          <div class="form-field">
+            <label for="budget">Project budget</label>
+            <select id="budget" name="budget" class="form-input" required>
+              <option value="">Select budget range</option>
+              <option>Less than £10K</option>
+              <option>£10K–£50K</option>
+              <option>£50K–£100K</option>
+              <option>More than £100K</option>
+            </select>
+          </div>
+
+          <!-- Services -->
+          <div class="form-field">
+            <label for="services">What services are you interested in?</label>
+            <select id="services" name="services" class="form-input" required>
+              <option value="">Select service</option>
+              <option>AI Audit &amp; Strategy</option>
+              <option>AI Co-Pilot / Agents</option>
+              <option>Finance Automation</option>
+              <option>Custom CRM / Data Apps</option>
+              <option>R&amp;D Tax Relief Claims</option>
+              <option>Legal-Tech Experiments</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-field form-span2">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-input" rows="5" placeholder="Share context, goals, timelines…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="pill-ghost primary" type="submit">Send inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
